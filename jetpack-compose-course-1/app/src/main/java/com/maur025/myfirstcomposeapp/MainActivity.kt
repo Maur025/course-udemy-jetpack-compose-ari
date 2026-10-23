@@ -5,13 +5,11 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.maur025.myfirstcomposeapp.components.MyButtons
-import com.maur025.myfirstcomposeapp.components.MyTextFieldParent
+import com.maur025.myfirstcomposeapp.components.MyIcon
 import com.maur025.myfirstcomposeapp.login.Greeting
 import com.maur025.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
@@ -22,7 +20,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyButtons(Modifier.padding(innerPadding))
+                    MyIcon()
+                    // MyNetworkImage()
+                    // MyImage()
+                    // MyButtons(Modifier.padding(innerPadding))
                     // MyTextFieldParent(Modifier.padding(innerPadding))
                     // MyTexts(Modifier.padding(innerPadding))
                     // MyState(Modifier.padding(innerPadding))
